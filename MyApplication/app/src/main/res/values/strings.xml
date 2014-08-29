@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">Universidad</string>
-    <string name="seleccion_recinto">Selección de Recinto</string>
     <string name="action_settings">Settings</string>
+    <string name="seleccion">Selección de Recinto</string>
+    <string name="recinto1">Recinto Santiago</string>
+
 
 </resources>

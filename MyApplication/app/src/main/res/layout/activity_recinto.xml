@@ -6,11 +6,26 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".Recinto">
+    tools:context=".Recinto"
+    android:id="@+id/layout_recinto">
+
 
     <TextView
-        android:text="@string/seleccion_recinto"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/seleccion"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/titulos"/>
 
+    <ImageView
+        android:layout_width="@dimen/boton_recinto_ancho"
+        android:layout_height="@dimen/boton_recinto_largo"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
 </RelativeLayout>
