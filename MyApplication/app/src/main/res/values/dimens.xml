@@ -3,6 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="titulos">25dp</dimen>
-    <dimen name="boton_recinto_ancho">300dp</dimen>
-    <dimen name="boton_recinto_largo">100dp</dimen>
+    <dimen name="boton_recinto_ancho">350dp</dimen>
+    <dimen name="boton_recinto_alto">150dp</dimen>
 </resources>

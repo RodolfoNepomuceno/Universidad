@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Recinto1"
+            android:label="Recinto Santiago">
+            </activity>
+        <activity
+            android:name=".Recinto2"
+            android:label="Recinto Santo Domingo">
+            </activity>
     </application>
 
 </manifest>
