@@ -9,7 +9,7 @@
     tools:context=".Recinto">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="@string/seleccion_recinto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
