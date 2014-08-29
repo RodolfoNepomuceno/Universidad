@@ -48,18 +48,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/recinto1"
         android:id="@+id/textView2"
         android:layout_alignBottom="@+id/imageButton_r1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:contentDescription="@string/recinto1" />
+        android:contentDescription="@string/recinto1"
+        android:textColor="@color/blanco"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/recinto2"
         android:id="@+id/textView3"
         android:layout_alignBottom="@+id/imageButton_r2"
