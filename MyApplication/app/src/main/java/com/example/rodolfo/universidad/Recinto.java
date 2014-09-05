@@ -14,7 +14,6 @@ import android.widget.Toast;
 public class Recinto extends ActionBarActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +38,7 @@ public class Recinto extends ActionBarActivity {
                                                @Override
                                                public void onClick(View view) {
                                                    setContentView(R.layout.recinto1);
-                                                  Toast toast = Toast.makeText(context, text, duration);
+                                                   Toast toast = Toast.makeText(context, text, duration);
                                                    toast.show();
 
                                                }

@@ -17,33 +17,30 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/seleccion"
         android:id="@+id/textView_seleccion"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
         android:textSize="@dimen/titulos"
-        android:contentDescription="@string/seleccion" />
+        android:contentDescription="@string/seleccion"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:layout_width="@dimen/boton_recinto_ancho"
         android:layout_height="@dimen/boton_recinto_alto"
         android:id="@+id/imageButton_r1"
         android:background="@drawable/recinto1"
+        android:contentDescription="@string/recinto1"
+        android:layout_marginTop="45dp"
         android:layout_below="@+id/textView_seleccion"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="43dp"
-        android:contentDescription="@string/recinto1" />
+        android:layout_centerInParent="true" />
 
     <ImageButton
         android:layout_width="@dimen/boton_recinto_ancho"
         android:layout_height="@dimen/boton_recinto_alto"
         android:id="@+id/imageButton_r2"
         android:background="@drawable/recinto2"
-        android:layout_marginBottom="48dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:contentDescription="@string/recinto2" />
+        android:contentDescription="@string/recinto2"
+        android:layout_below="@+id/imageButton_r1"
+        android:layout_marginTop="45dp"
+        android:layout_centerInParent="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,11 +48,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/recinto1"
         android:id="@+id/textView2"
-        android:layout_alignBottom="@+id/imageButton_r1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:contentDescription="@string/recinto1"
-        android:textColor="@color/blanco"/>
+        android:textColor="@color/blanco"
+        android:layout_alignBottom="@+id/imageButton_r1"
+        android:layout_alignLeft="@+id/imageButton_r1"
+        android:layout_alignStart="@+id/imageButton_r1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,8 +60,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/recinto2"
         android:id="@+id/textView3"
+        android:contentDescription="@string/recinto2"
         android:layout_alignBottom="@+id/imageButton_r2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:contentDescription="@string/recinto2" />
+        android:layout_alignLeft="@+id/imageButton_r2"
+        android:layout_alignStart="@+id/imageButton_r2" />
 </RelativeLayout>

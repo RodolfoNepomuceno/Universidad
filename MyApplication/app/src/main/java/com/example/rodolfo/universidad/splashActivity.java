@@ -1,21 +1,21 @@
 package com.example.rodolfo.universidad;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Window;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 /**
  * Created by Rodolfo on 29/8/14.
  */
-public class splashActivity extends Activity{
+public class splashActivity extends Activity {
 
     //Establece la duracion del Splash(en ms)
-    private static final long splash_delay=2000;
+    private static final long splash_delay = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class splashActivity extends Activity{
 
         // Set portrait orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         // Hide title bar
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
