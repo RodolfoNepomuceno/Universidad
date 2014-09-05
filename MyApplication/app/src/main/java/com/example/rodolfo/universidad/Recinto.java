@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -58,6 +59,26 @@ public class Recinto extends ActionBarActivity {
         });
     }
 
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        // TODO Auto-generated method stub
+
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                Toast.makeText(this, "Boton de Volumen Up presionado",
+                        Toast.LENGTH_SHORT).show();
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                Toast.makeText(this, "Boton de Volumen Down presionado",
+                        Toast.LENGTH_SHORT).show();
+                return true;
+            case KeyEvent.KEYCODE_BACK:
+                Toast.makeText(this, "Boton Atras",
+                        Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return super.onKeyUp(keyCode, event);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
