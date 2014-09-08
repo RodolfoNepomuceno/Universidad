@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo">
+
+
+
+    <ImageButton
+        android:layout_width="@dimen/boton_recinto_ancho"
+        android:layout_height="@dimen/boton_recinto_alto"
+        android:id="@+id/imageButton_estudiante"
+        android:contentDescription="@string/estudiante"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/estudiante"
+        android:id="@+id/textView_estudiante"
+        android:contentDescription="@string/estudiante"
+        android:layout_alignBottom="@+id/imageButton_estudiante"
+        android:layout_alignLeft="@+id/imageButton_estudiante"
+        android:layout_alignStart="@+id/imageButton_estudiante" />
+
+    <ImageButton
+        android:layout_width="@dimen/boton_recinto_ancho"
+        android:layout_height="@dimen/boton_recinto_alto"
+        android:id="@+id/imageButton_profesor"
+        android:contentDescription="@string/profesor"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/imageButton_estudiante"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/profesor"
+        android:id="@+id/textView_profesor"
+        android:contentDescription="@string/estudiante"
+        android:layout_alignBottom="@+id/imageButton_profesor"
+        android:layout_alignLeft="@+id/imageButton_profesor"
+        android:layout_alignStart="@+id/imageButton_profesor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/recinto1"
+        android:id="@+id/textView"
+        android:textSize="@dimen/titulos"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
 
 </RelativeLayout>

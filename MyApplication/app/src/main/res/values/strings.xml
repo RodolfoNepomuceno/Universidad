@@ -6,6 +6,6 @@
     <string name="seleccion">Selección de Recinto</string>
     <string name="recinto1">Recinto Santiago</string>
     <string name="recinto2">Recinto Santo Domingo</string>
-
-
+    <string name="estudiante">Estudiante</string>
+    <string name="profesor">Profesor</string>
 </resources>

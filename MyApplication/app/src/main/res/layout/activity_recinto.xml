@@ -20,7 +20,8 @@
         android:textSize="@dimen/titulos"
         android:contentDescription="@string/seleccion"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
 
     <ImageButton
         android:layout_width="@dimen/boton_recinto_ancho"
