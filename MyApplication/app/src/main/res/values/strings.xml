@@ -12,4 +12,5 @@
     <string name="username">username</string>
     <string name="iniciar">Iniciar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="credenciales">Credenciales</string>
 </resources>
