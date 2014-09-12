@@ -8,4 +8,8 @@
     <string name="recinto2">Recinto Santo Domingo</string>
     <string name="estudiante">Estudiante</string>
     <string name="profesor">Profesor</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

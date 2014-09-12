@@ -1,7 +1,9 @@
 package com.example.rodolfo.universidad;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
@@ -20,7 +22,7 @@ public class Recinto extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recinto);
 
-        //Establece el Activity solo en vertical
+    //Establece el Activity solo en vertical
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Control de los Toast
