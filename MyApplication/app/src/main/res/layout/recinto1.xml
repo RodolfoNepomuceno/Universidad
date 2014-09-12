@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo">
 
-
-
     <ImageButton
         android:layout_width="@dimen/boton_recinto_ancho"
         android:layout_height="@dimen/boton_recinto_alto"

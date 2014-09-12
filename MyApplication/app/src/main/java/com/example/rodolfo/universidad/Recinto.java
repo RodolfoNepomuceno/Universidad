@@ -1,9 +1,9 @@
 package com.example.rodolfo.universidad;
 
-import android.annotation.TargetApi;
+
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
-
 
 public class Recinto extends ActionBarActivity {
 
@@ -26,42 +25,66 @@ public class Recinto extends ActionBarActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Control de los Toast
+
+
+        //Objetos asociados a los botones
+    final ImageButton button_recinto1 = (ImageButton) findViewById(R.id.imageButton_r1);
+    final ImageButton button_recinto2 = (ImageButton) findViewById(R.id.imageButton_r2);
+
+
+   /* button_recinto1.setOnClickListener(new ImageButton.OnClickListener() {
+
+        @Override
+        public void onClick(View view) {
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+
+        }
+    }
+    );
+
+    button_recinto2.setOnClickListener(new ImageButton.OnClickListener() {
+
+        CharSequence text = "Recinto Santo Domingo";
+
+        @Override
+        public void onClick(View view) {
+            setContentView(R.layout.recinto2);
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        }
+    });*/
+}
+    //Funcion del Metodo OnClick llamado en el layout
+    public void recinto1 (View view)
+    {
+        CharSequence text = "Recinto Santiago";
+
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
 
-        //Objetos asociados a los botones
-        final ImageButton button_recinto1 = (ImageButton) findViewById(R.id.imageButton_r1);
-        final ImageButton button_recinto2 = (ImageButton) findViewById(R.id.imageButton_r2);
-
-        button_recinto1.setOnClickListener(new ImageButton.OnClickListener() {
-
-                                               CharSequence text = "Recinto Santiago";
-
-
-                                               @Override
-                                               public void onClick(View view) {
-                                                   setContentView(R.layout.recinto1);
-                                                   Toast toast = Toast.makeText(context, text, duration);
-                                                   toast.show();
-
-                                               }
-                                           }
-        );
-
-        button_recinto2.setOnClickListener(new ImageButton.OnClickListener() {
-
-            CharSequence text = "Recinto Santo Domingo";
-
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.recinto2);
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+        Intent i = new Intent(this, Recinto1.class );
+        startActivity(i);
     }
 
-    @Override
+    //Funcion del Metodo OnClick llamado en el layout
+    public void recinto2 (View view)
+    {
+        CharSequence text = "Recinto Santo Domingo";
+
+        final Context context = getApplicationContext();
+        final int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+        Intent i = new Intent(this, Recinto1.class );
+        startActivity(i);
+    }
+
+
+   /* @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
 
@@ -80,7 +103,7 @@ public class Recinto extends ActionBarActivity {
                 return true;
         }
         return super.onKeyUp(keyCode, event);
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
