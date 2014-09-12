@@ -40,7 +40,8 @@ public class Credenciales extends DialogFragment {
                             })
                     .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-                            Toast.makeText(getActivity(), "No", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "No", Toast.LENGTH_SHORT)
+                                    .show();
                         }
                     });
 
