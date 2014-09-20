@@ -28,8 +28,8 @@ public class Recinto extends ActionBarActivity {
 
 
         //Objetos asociados a los botones
-    final ImageButton button_recinto1 = (ImageButton) findViewById(R.id.imageButton_r1);
-    final ImageButton button_recinto2 = (ImageButton) findViewById(R.id.imageButton_r2);
+   /* final ImageButton button_recinto1 = (ImageButton) findViewById(R.id.imageButton_r1);
+    final ImageButton button_recinto2 = (ImageButton) findViewById(R.id.imageButton_r2);*/
 
 
    /* button_recinto1.setOnClickListener(new ImageButton.OnClickListener() {
