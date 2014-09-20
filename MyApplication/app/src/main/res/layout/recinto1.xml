@@ -14,13 +14,8 @@
         android:contentDescription="@string/estudiante"
         android:layout_marginTop="81dp"
         android:layout_alignParentTop="true"
-<<<<<<< HEAD
         android:layout_centerHorizontal="true"/>
 
-=======
-        android:layout_centerHorizontal="true"
-        android:onClick="form_credenciales"/>
->>>>>>> FETCH_HEAD
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
