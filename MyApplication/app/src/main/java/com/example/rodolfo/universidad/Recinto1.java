@@ -48,9 +48,8 @@ public class Recinto1 extends Activity
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-        //Intent i = new Intent(this,Credenciales.class);
-        //startActivity(i);
+        Intent i = new Intent(this,Credenciales.class);
+        startActivity(i);
     }
-
 }
 
