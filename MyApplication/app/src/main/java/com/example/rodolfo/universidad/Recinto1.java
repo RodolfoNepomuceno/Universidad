@@ -1,7 +1,16 @@
 package com.example.rodolfo.universidad;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
+=======
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
+>>>>>>> FETCH_HEAD
+
 
 /**
  * Created by Rodolfo on 28/8/14.
@@ -12,6 +21,41 @@ public class Recinto1 extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recinto1);
 
+<<<<<<< HEAD
+=======
+        //Control de los Toast
+        final Context context = getApplicationContext();
+        final int duration = Toast.LENGTH_SHORT;
+
+     /*   //Objetos asociados a los botones
+        final ImageButton button_estudiantes = (ImageButton) findViewById(R.id.imageButton_estudiante);
+
+        button_estudiantes.setOnClickListener(new ImageButton.OnClickListener() {
+
+            CharSequence text = "Estudiantes";
+
+            @Override
+            public void onClick(View view) {
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });*/
+>>>>>>> FETCH_HEAD
     }
 
+
+    //Funcion del Metodo OnClick llamado en el layout
+    public void form_credenciales (View view)
+    {
+        CharSequence text = "Estudiante Recinto Santiago";
+
+        final Context context = getApplicationContext();
+        final int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+        Intent i = new Intent(this,Credenciales.class);
+        startActivity(i);
+    }
 }
+

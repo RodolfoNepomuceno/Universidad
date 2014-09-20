@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Recinto"
-                  android:label="Universidad">
-                            </activity>
+        <activity
+            android:name=".Recinto"
+            android:label="Universidad">
+            </activity>
         <activity
             android:name=".Recinto1"
             android:label="Recinto Santiago">
@@ -27,6 +28,6 @@
             android:name=".Recinto2"
             android:label="Recinto Santo Domingo">
             </activity>
-    </application>
+     </application>
 
 </manifest>
