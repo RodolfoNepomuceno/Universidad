@@ -15,7 +15,7 @@
         android:layout_marginTop="81dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="credenciales"/>
+        android:onClick="form_credenciales"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

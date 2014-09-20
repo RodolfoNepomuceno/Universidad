@@ -35,22 +35,21 @@ public class Recinto1 extends Activity
                 toast.show();
             }
         });*/
-
-
-
     }
 
-    public void credenciales (View view)
+
+    //Funcion del Metodo OnClick llamado en el layout
+    public void form_credenciales (View view)
     {
-        CharSequence text = "Recinto Santo Domingo";
+        CharSequence text = "Estudiante Recinto Santiago";
 
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-        Intent i = new Intent(this, Credenciales.class );
-        startActivity(i);
+        //Intent i = new Intent(this,Credenciales.class);
+        //startActivity(i);
     }
 
 }

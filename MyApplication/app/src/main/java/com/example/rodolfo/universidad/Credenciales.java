@@ -1,21 +1,19 @@
 package com.example.rodolfo.universidad;
 
-import android.annotation.TargetApi;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.DialogInterface;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.widget.Toast;
+import android.support.v4.app.DialogFragment;
 
 /**
  * Created by Rodolfo on 10/9/14.
  */
 
 
-@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class Credenciales extends DialogFragment {
 
         @Override

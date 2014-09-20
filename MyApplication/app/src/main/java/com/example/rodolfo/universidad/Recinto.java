@@ -56,7 +56,7 @@ public class Recinto extends ActionBarActivity {
     });*/
 }
     //Funcion del Metodo OnClick llamado en el layout
-    public void recinto1 (View view)
+    public void boton_recinto1 (View view)
     {
         CharSequence text = "Recinto Santiago";
 
@@ -70,7 +70,7 @@ public class Recinto extends ActionBarActivity {
     }
 
     //Funcion del Metodo OnClick llamado en el layout
-    public void recinto2 (View view)
+    public void boton_recinto2 (View view)
     {
         CharSequence text = "Recinto Santo Domingo";
 
