@@ -7,6 +7,10 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.support.v4.app.DialogFragment;
+import android.widget.Toast;
+
+
+
 
 /**
  * Created by Rodolfo on 10/9/14.
@@ -14,7 +18,9 @@ import android.support.v4.app.DialogFragment;
 
 public class Credenciales extends DialogFragment {
 
-    @Override
+
+
+       @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         // Get the layout inflater
@@ -28,13 +34,18 @@ public class Credenciales extends DialogFragment {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         // sign in the user ...
+                        Toast.makeText(getActivity(),
+                                android.R.string.yes,
+                                Toast.LENGTH_SHORT).show();
                     }
                 })
-                .setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        //LoginDialogFragment.this.getDialog().cancel();
+                        Toast.makeText(getActivity(), android.R.string.no,
+                                Toast.LENGTH_SHORT).show();
                     }
                 });
         return builder.create();
+
     }
 }

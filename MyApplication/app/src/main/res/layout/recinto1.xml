@@ -14,7 +14,8 @@
         android:contentDescription="@string/estudiante"
         android:layout_marginTop="81dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="form_credenciales"/>
 
     <TextView
         android:layout_width="wrap_content"

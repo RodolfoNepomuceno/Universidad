@@ -2,14 +2,9 @@ package com.example.rodolfo.universidad;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< HEAD
-=======
-import android.view.View;
-import android.widget.ImageButton;
+import android.support.v4.app.FragmentManager;
 import android.widget.Toast;
->>>>>>> FETCH_HEAD
 
 
 /**
@@ -17,12 +12,12 @@ import android.widget.Toast;
  */
 public class Recinto1 extends Activity
 {
-    protected void onCreate(Bundle savedInstanceState) {
+        private static final String TAG = "dialog";
+
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recinto1);
 
-<<<<<<< HEAD
-=======
         //Control de los Toast
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
@@ -40,12 +35,12 @@ public class Recinto1 extends Activity
                 toast.show();
             }
         });*/
->>>>>>> FETCH_HEAD
-    }
 
+
+      }
 
     //Funcion del Metodo OnClick llamado en el layout
-    public void form_credenciales (View view)
+     public void form_credenciales ()
     {
         CharSequence text = "Estudiante Recinto Santiago";
 
@@ -54,8 +49,11 @@ public class Recinto1 extends Activity
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-        Intent i = new Intent(this,Credenciales.class);
-        startActivity(i);
+
+        //Intent i = new Intent(Recinto1.this,Credenciales.class);
+        //startActivity(i);
+
     }
+
 }
 
