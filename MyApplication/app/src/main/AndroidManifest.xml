@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Recinto"
+            android:name=".Recintos"
             android:label="Universidad">
             </activity>
         <activity

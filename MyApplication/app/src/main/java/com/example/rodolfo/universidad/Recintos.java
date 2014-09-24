@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Recinto extends ActionBarActivity {
+public class Recintos extends ActionBarActivity {
 
 
     @Override
@@ -43,7 +43,7 @@ public class Recinto extends ActionBarActivity {
 
     button_recinto2.setOnClickListener(new ImageButton.OnClickListener() {
 
-        CharSequence text = "Recinto Santo Domingo";
+        CharSequence text = "Recintos Santo Domingo";
 
         @Override
         public void onClick(View view) {
@@ -56,7 +56,7 @@ public class Recinto extends ActionBarActivity {
     //Funcion del Metodo OnClick llamado en el layout
     public void boton_recinto1 (View view)
     {
-        CharSequence text = "Recinto Santiago";
+        CharSequence text = "Recintos Santiago";
 
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
@@ -70,7 +70,7 @@ public class Recinto extends ActionBarActivity {
     //Funcion del Metodo OnClick llamado en el layout
     public void boton_recinto2 (View view)
     {
-        CharSequence text = "Recinto Santo Domingo";
+        CharSequence text = "Recintos Santo Domingo";
 
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
@@ -78,7 +78,7 @@ public class Recinto extends ActionBarActivity {
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
 
-        Intent i = new Intent(this, Recinto1.class );
+        Intent i = new Intent(this, Recinto2.class );
         startActivity(i);
     }
 

@@ -34,7 +34,7 @@ public class Recinto1 extends ActionBarActivity //Activity
             @Override
             public void onClick(View view) {
 
-                CharSequence text = "Estudiante Recinto Santiago";
+                CharSequence text = "Estudiante Recintos Santiago";
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
