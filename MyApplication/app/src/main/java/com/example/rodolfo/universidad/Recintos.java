@@ -25,7 +25,7 @@ public class Recintos extends ActionBarActivity {
         //Control de los Toast
 
 
-        //Objetos asociados a los botones
+   //Objetos asociados a los botones
    /* final ImageButton button_recinto1 = (ImageButton) findViewById(R.id.imageButton_r1);
     final ImageButton button_recinto2 = (ImageButton) findViewById(R.id.imageButton_r2);*/
 
@@ -56,7 +56,7 @@ public class Recintos extends ActionBarActivity {
     //Funcion del Metodo OnClick llamado en el layout
     public void boton_recinto1 (View view)
     {
-        CharSequence text = "Recintos Santiago";
+        CharSequence text = "Recinto Santiago";
 
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
@@ -70,7 +70,7 @@ public class Recintos extends ActionBarActivity {
     //Funcion del Metodo OnClick llamado en el layout
     public void boton_recinto2 (View view)
     {
-        CharSequence text = "Recintos Santo Domingo";
+        CharSequence text = "Recinto Santo Domingo";
 
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;

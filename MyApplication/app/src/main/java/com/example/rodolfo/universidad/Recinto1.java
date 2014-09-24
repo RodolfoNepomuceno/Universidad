@@ -29,12 +29,13 @@ public class Recinto1 extends ActionBarActivity //Activity
         //Objetos asociados a los botones
         final ImageButton button_estudiantes = (ImageButton) findViewById(R.id.imageButton_estudiante);
 
-        button_estudiantes.setOnClickListener(new ImageButton.OnClickListener() {
+        button_estudiantes.setOnClickListener(new ImageButton.OnClickListener()
+        {
 
             @Override
             public void onClick(View view) {
 
-                CharSequence text = "Estudiante Recintos Santiago";
+                CharSequence text = "Estudiantes Recinto Santiago";
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
