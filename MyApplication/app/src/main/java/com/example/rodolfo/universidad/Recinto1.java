@@ -3,7 +3,7 @@ package com.example.rodolfo.universidad;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
+import android.support.v4.app.DialogFragment;
 import android.widget.Toast;
 
 
@@ -22,7 +22,7 @@ public class Recinto1 extends Activity
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
 
-     /*   //Objetos asociados a los botones
+     /* //Objetos asociados a los botones
         final ImageButton button_estudiantes = (ImageButton) findViewById(R.id.imageButton_estudiante);
 
         button_estudiantes.setOnClickListener(new ImageButton.OnClickListener() {
@@ -33,9 +33,11 @@ public class Recinto1 extends Activity
             public void onClick(View view) {
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+
+                DialogFragment dialog = new Credenciales();
+                dialog.show(getSupportFragmentManager(), "dialog");
             }
         });*/
-
 
       }
 
