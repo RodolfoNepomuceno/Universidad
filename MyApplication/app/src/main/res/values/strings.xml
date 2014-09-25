@@ -6,11 +6,12 @@
     <string name="seleccion">Selección de Recinto</string>
     <string name="recinto1">Recinto Santiago</string>
     <string name="recinto2">Recinto Santo Domingo</string>
-    <string name="estudiante">Estudiante</string>
-    <string name="profesor">Profesor</string>
+    <string name="estudiante">Estudiantes</string>
+    <string name="docente">Docentes</string>
     <string name="contrasena">Contraseña</string>
     <string name="matricula">Matrícula</string>
     <string name="iniciar">Iniciar</string>
     <string name="cancelar">Cancelar</string>
     <string name="inicio_sesion">Inicio de Sesión</string>
+    <string name="codigo">Código</string>
 </resources>

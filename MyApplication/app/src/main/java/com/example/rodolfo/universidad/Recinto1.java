@@ -41,10 +41,29 @@ public class Recinto1 extends ActionBarActivity //Activity
                 toast.show();
 
                 //Crea una instancia de la clase Credenciales
-                DialogFragment dialog = new Credenciales();
+                DialogFragment dialog = new Estudiantes_Credenciales();
                 dialog.show(getSupportFragmentManager(), "dialog");
             }
         });
+
+        final ImageButton button_docentes = (ImageButton) findViewById(R.id.imageButton_docente);
+
+        button_docentes.setOnClickListener(new ImageButton.OnClickListener() {
+
+                                               @Override
+                                               public void onClick(View view) {
+                                                   CharSequence text = "Docentes Recinto Santiago";
+
+                                                   Toast toast = Toast.makeText(context, text, duration);
+                                                   toast.show();
+
+                                                   //Crea una instancia de la clase Credenciales
+                                                   DialogFragment dialog = new Docentes_Credenciales();
+                                                   dialog.show(getSupportFragmentManager(), "dialog");
+
+                                               }
+                                           }
+        );
     }
 }
 

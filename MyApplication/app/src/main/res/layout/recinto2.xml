@@ -16,4 +16,45 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp" />
+
+    <ImageButton
+        android:layout_width="@dimen/boton_recinto_ancho"
+        android:layout_height="@dimen/boton_recinto_alto"
+        android:id="@+id/imageButton_estudiante"
+        android:background="@drawable/boton_estudiante"
+        android:contentDescription="@string/estudiante"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estudiante"
+        android:id="@+id/textView_estudiante"
+        android:contentDescription="@string/estudiante"
+        android:layout_alignBottom="@+id/imageButton_estudiante"
+        android:layout_alignLeft="@+id/imageButton_estudiante"
+        android:layout_alignStart="@+id/imageButton_estudiante"
+        android:textSize="@dimen/cuerpo"/>
+
+    <ImageButton
+        android:layout_width="@dimen/boton_recinto_ancho"
+        android:layout_height="@dimen/boton_recinto_alto"
+        android:id="@+id/imageButton_docente"
+        android:contentDescription="@string/docente"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/imageButton_estudiante"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/docente"
+        android:id="@+id/textView_docente"
+        android:contentDescription="@string/estudiante"
+        android:layout_alignBottom="@+id/imageButton_docente"
+        android:layout_alignLeft="@+id/imageButton_docente"
+        android:layout_alignStart="@+id/imageButton_docente"
+        android:textSize="@dimen/cuerpo"/>
+
 </RelativeLayout>

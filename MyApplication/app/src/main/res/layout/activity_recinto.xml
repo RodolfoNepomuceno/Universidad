@@ -51,7 +51,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/cuerpo"
         android:text="@string/recinto1"
         android:id="@+id/textView2"
         android:contentDescription="@string/recinto1"
@@ -63,7 +63,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/cuerpo"
         android:text="@string/recinto2"
         android:id="@+id/textView3"
         android:contentDescription="@string/recinto2"
