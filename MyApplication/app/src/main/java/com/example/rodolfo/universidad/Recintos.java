@@ -19,8 +19,8 @@ public class Recintos extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recinto);
 
-    //Establece el Activity solo en vertical
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        //Establece el Activity solo en vertical
+       // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Control de los Toast
 

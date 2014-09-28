@@ -6,4 +6,5 @@
     <dimen name="cuerpo">20dp</dimen>
     <dimen name="boton_recinto_ancho">350dp</dimen>
     <dimen name="boton_recinto_alto">150dp</dimen>
+    <dimen name="boton_recinto_ancho_horizontal">200dp</dimen>
 </resources>
