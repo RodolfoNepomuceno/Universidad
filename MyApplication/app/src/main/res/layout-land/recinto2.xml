@@ -23,10 +23,10 @@
         android:id="@+id/imageButton_estudiante"
         android:background="@drawable/boton_estudiante"
         android:contentDescription="@string/estudiante"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="38dp" />
+        android:layout_toStartOf="@+id/imageButton_docente"
+        android:layout_marginRight="66dp"
+        android:layout_alignTop="@+id/imageButton_docente"
+        android:layout_toLeftOf="@+id/imageButton_docente" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,9 +44,9 @@
         android:layout_height="@dimen/boton_recinto_alto"
         android:id="@+id/imageButton_docente"
         android:contentDescription="@string/docente"
-        android:layout_marginRight="38dp"
+        android:layout_marginRight="53dp"
         android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentRight="false"
         android:layout_alignParentEnd="true" />
 
     <TextView
