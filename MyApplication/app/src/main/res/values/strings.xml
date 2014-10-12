@@ -14,4 +14,5 @@
     <string name="cancelar">Cancelar</string>
     <string name="inicio_sesion">Inicio de Sesión</string>
     <string name="codigo">Código</string>
+    <string name="no_internet">Requiere Conexión a Internet</string>
 </resources>

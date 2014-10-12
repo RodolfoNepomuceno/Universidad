@@ -67,15 +67,14 @@ public class splashActivity extends Activity {
                 connec.getNetworkInfo(1).getState() == android.net.NetworkInfo.State.CONNECTED) {
 
             // if connected with internet
-
-            Toast.makeText(this, " Connected ", Toast.LENGTH_LONG).show();
+           // Toast.makeText(this, " Connected ", Toast.LENGTH_LONG).show();
             return true;
 
         } else if (
                 connec.getNetworkInfo(0).getState() == android.net.NetworkInfo.State.DISCONNECTED ||
                         connec.getNetworkInfo(1).getState() == android.net.NetworkInfo.State.DISCONNECTED) {
 
-            Toast.makeText(this, " Not Connected ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,R.string.no_internet, Toast.LENGTH_LONG).show();
             return false;
         }
         return false;
