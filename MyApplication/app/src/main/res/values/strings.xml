@@ -15,4 +15,5 @@
     <string name="inicio_sesion">Inicio de Sesión</string>
     <string name="codigo">Código</string>
     <string name="no_internet">Requiere Conexión a Internet</string>
+    <string name="carrera">Carrera</string>
 </resources>
