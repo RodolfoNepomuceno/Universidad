@@ -21,12 +21,11 @@ public class Recintos extends ActionBarActivity {
     //Funcion del Metodo OnClick llamado en el layout
     public void boton_recinto1 (View view)
     {
-        CharSequence text = "Recinto Santiago";
 
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
+        Toast toast = Toast.makeText(context,R.string.recinto1, duration);
         toast.show();
         Intent i = new Intent(this, Recinto1.class );
         startActivity(i);
@@ -35,12 +34,11 @@ public class Recintos extends ActionBarActivity {
     //Funcion del Metodo OnClick llamado en el layout
     public void boton_recinto2 (View view)
     {
-        CharSequence text = "Recinto Santo Domingo";
 
         final Context context = getApplicationContext();
         final int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
+        Toast toast = Toast.makeText(context,R.string.recinto2, duration);
         toast.show();
 
         Intent i = new Intent(this, Recinto2.class );

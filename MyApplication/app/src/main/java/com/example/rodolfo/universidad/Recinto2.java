@@ -29,9 +29,7 @@ public class Recinto2 extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
-                CharSequence text = "Estudiantes Recinto Santo Domingo";
-
-                Toast toast = Toast.makeText(context, text, duration);
+                Toast toast = Toast.makeText(context, R.string.estudiante, duration);
                 toast.show();
 
                 //Crea una instancia de la clase Credenciales
@@ -46,9 +44,8 @@ public class Recinto2 extends ActionBarActivity {
 
                                                @Override
                                                public void onClick(View view) {
-                                                   CharSequence text = "Docentes Recinto Santo Domingo";
 
-                                                   Toast toast = Toast.makeText(context, text, duration);
+                                                   Toast toast = Toast.makeText(context, R.string.docente, duration);
                                                    toast.show();
 
                                                    //Crea una instancia de la clase Credenciales
