@@ -30,7 +30,7 @@ public class splashActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         //Test interner connection
-        isInternetOn();
+        comprobar_conexion();
 
         setContentView(R.layout.splash);
 
@@ -54,7 +54,7 @@ public class splashActivity extends Activity {
         timer.schedule(task, splash_delay);
     }
 
-    public final boolean isInternetOn() {
+    public final boolean comprobar_conexion() {
 
         // get Connectivity Manager object to check connection
         ConnectivityManager connec =
