@@ -3,8 +3,10 @@ package com.example.rodolfo.universidad;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.Window;
+import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,6 +29,9 @@ public class splashActivity extends Activity {
         // Hide title bar
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+        //Test interner connection
+        isInternetOn();
+
         setContentView(R.layout.splash);
 
         TimerTask task = new TimerTask() {
@@ -47,5 +52,32 @@ public class splashActivity extends Activity {
         // Simulate a long loading process on application startup.
         Timer timer = new Timer();
         timer.schedule(task, splash_delay);
+    }
+
+    public final boolean isInternetOn() {
+
+        // get Connectivity Manager object to check connection
+        ConnectivityManager connec =
+                (ConnectivityManager) getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
+
+        // Check for network connections
+        if (connec.getNetworkInfo(0).getState() == android.net.NetworkInfo.State.CONNECTED ||
+                connec.getNetworkInfo(0).getState() == android.net.NetworkInfo.State.CONNECTING ||
+                connec.getNetworkInfo(1).getState() == android.net.NetworkInfo.State.CONNECTING ||
+                connec.getNetworkInfo(1).getState() == android.net.NetworkInfo.State.CONNECTED) {
+
+            // if connected with internet
+
+            Toast.makeText(this, " Connected ", Toast.LENGTH_LONG).show();
+            return true;
+
+        } else if (
+                connec.getNetworkInfo(0).getState() == android.net.NetworkInfo.State.DISCONNECTED ||
+                        connec.getNetworkInfo(1).getState() == android.net.NetworkInfo.State.DISCONNECTED) {
+
+            Toast.makeText(this, " Not Connected ", Toast.LENGTH_LONG).show();
+            return false;
+        }
+        return false;
     }
 }
